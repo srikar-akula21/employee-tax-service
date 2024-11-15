@@ -36,5 +36,4 @@ public class Employee {
     @Column(name = "salary", nullable = false)
     private Double salary;
 
-    // Getters and Setters
 }

@@ -18,6 +18,5 @@ public class EmployeeDTO {
     private LocalDate doj;
     private Double salary;
 
-    // Getters and Setters
 }
 

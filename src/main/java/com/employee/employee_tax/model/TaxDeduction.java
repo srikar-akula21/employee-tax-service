@@ -1,5 +1,10 @@
 package com.employee.employee_tax.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class TaxDeduction {
 
     private String employeeId;
@@ -9,62 +14,12 @@ public class TaxDeduction {
     private double taxAmount;
     private double cessAmount;
 
-    // Constructor
     public TaxDeduction(String employeeId, String firstName, String lastName, double yearlySalary, double taxAmount, double cessAmount) {
         this.employeeId = employeeId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.yearlySalary = yearlySalary;
         this.taxAmount = taxAmount;
-        this.cessAmount = cessAmount;
-    }
-
-    // Getters and Setters
-    public String getEmployeeId() {
-        return employeeId;
-    }
-
-    public void setEmployeeId(String employeeId) {
-        this.employeeId = employeeId;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public double getYearlySalary() {
-        return yearlySalary;
-    }
-
-    public void setYearlySalary(double yearlySalary) {
-        this.yearlySalary = yearlySalary;
-    }
-
-    public double getTaxAmount() {
-        return taxAmount;
-    }
-
-    public void setTaxAmount(double taxAmount) {
-        this.taxAmount = taxAmount;
-    }
-
-    public double getCessAmount() {
-        return cessAmount;
-    }
-
-    public void setCessAmount(double cessAmount) {
         this.cessAmount = cessAmount;
     }
 }
